@@ -13,7 +13,9 @@ josh.atkins  at uon.edu.au
 ## chapter 3 - Arrays 
 Neuromol_QC - Automated Array QC script 
 
-VCF_chunk - Phasing and impuation script 
+VCF_Chunk - Phasing and impuation script 
+
+Merge_Plink - Putting chunks back into whole chromosomes
 
 PRS_group_comparison - Script to do the stats 
 
