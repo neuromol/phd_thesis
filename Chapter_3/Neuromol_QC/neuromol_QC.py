@@ -17,7 +17,7 @@ from itertools import groupby, cycle
 from operator import itemgetter
 
 def check_arg(args=None):
-    parser = argparse.ArgumentParser(description='Neuromol_QC is a basic QC script that perfroms QC variants and sample QC and plots the results in Results directory - Josh Atkins c3114203@uon.edu.au ' ,formatter_class=argparse.RawTextHelpFormatter)
+    parser = argparse.ArgumentParser(description='Neuromol_QC is a basic QC script that perfroms QC variants and sample QC and plots the results in Results directory - Josh Atkins c3114203 at uon.edu.au ' ,formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-i', '--input', help='Input file name eg plink not plink.bim',required='True', default='plink')
     parser.add_argument('-l', '--label', help='The name of the dataset you are working on',required='True', default='default')
     parser.add_argument('-r', '--ref', help='The folder of the 1000g reference files and high LD regions file DEFAULT: ../Reference/ ', default='Reference/')
