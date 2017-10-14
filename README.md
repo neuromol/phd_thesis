@@ -10,7 +10,7 @@ josh.atkins  at uon.edu.au
 
 #list of script 
 
-## chapter 3 - Arrays 
+## Chapter 3 - Arrays 
 Neuromol_QC - Automated Array QC script 
 
 VCF_Chunk - Phasing and impuation script 
@@ -23,8 +23,13 @@ CNV_scoring - Script to score CNVs
 
 logistic_modelling - Script to train and test predictability
 
-## chapter 4 - 5 Next-generation sequencing scripts 
+## Chapter 4 - 5 Next-Generation Sequencing Scripts 
 
-WGS_pipeline - script generator for HPC to generate (removed parts that identify specific information regarding HPC or account information )
+WGS_pipeline - script generator for HPC to generate whole genome sequencing pipeline from Fastqc to VCF (removed parts that identify specific information regarding HPC or account information )
+
+
+Exome_pipeline - 
+
+RNA_seq_pipeline
 
  
