@@ -12,9 +12,13 @@ josh.atkins  at uon.edu.au
 
 ## chapter 3 - Arrays 
 Neuromol_QC - Automated Array QC script 
+
 VCF_chunk - Phasing and impuation script 
+
 PRS_group_comparison - Script to do the stats 
+
 CNV_scoring - Script to score CNVs 
+
 logistic_modelling - Script to train and test predictability
 
 ## chapter 4 - 5 Next-generation sequencing scripts 
