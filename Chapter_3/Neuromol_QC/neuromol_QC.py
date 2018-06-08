@@ -107,7 +107,7 @@ def pop_strat(plink_file_stage , ref , diff_ref): #### need to finish this off
     p = execute(plink_cmd)
     plink_cmd = ("plink --bfile " + plink_file_stage + " --extract prune.prune.in --genome --make-bed --out IBS")
     p = execute(plink_cmd)
-    Popen("""awk ' $10 > 0.185 ' IBS.genome | awk ' { print $1 , $2 } ' | tail -n +2 > IBS.remove""",shell=True).wait()
+    Popen("""awk ' $10 > 0.25 ' IBS.genome | awk ' { print $1 , $2 } ' | tail -n +2 > IBS.remove""",shell=True).wait()
     plink_cmd = ("""plink --bfile """+ plink_file_stage + """ --remove IBS.remove --make-bed --out temp5""")
     p = execute(plink_cmd)
     array_1 = p.split("\n")
