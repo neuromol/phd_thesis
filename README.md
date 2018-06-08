@@ -5,7 +5,7 @@ Josh Atkins -- University of Newcastle 2017
 Supervisors: Prof Murray Cairns and Dr Chantel Fitzsimmons 
 
 email:
-josh.atkins  at uon.edu.au
+joshua.atkins  at uon.edu.au
 
 
 #list of script 
