@@ -1,35 +1,45 @@
-## Scripts generated while completing my PhD Thesis
+# Scripts generated while completing my PhD Thesis
 
-Josh Atkins -- University of Newcastle 2017 
+**Josh Atkins -- University of Newcastle 2017** 
 
-Supervisors: Prof Murray Cairns and Dr Chantel Fitzsimmons 
+**Supervisors: `Prof Murray Cairns and Dr Chantel Fitzsimmons`** 
 
 email:
-joshua.atkins  at uon.edu.au
+`joshua.atkins  at uon.edu.au`
 
 
-#list of script 
+####list of script 
 
-## Chapter 3 - Arrays 
-Neuromol_QC - Automated Array QC script 
+**Chapter 3 - Arrays scripts** 
 
-VCF_Chunk - Phasing and impuation script 
+```
+-Neuromol_QC - Automated Array QC script 
 
-Merge_Plink - Putting chunks back into whole chromosomes
+-VCF_Chunk - Phasing and impuation script 
 
-PRS_group_comparison - Script to do the stats 
+-Merge_Plink - Putting chunks back into whole chromosomes
 
-CNV_scoring - Script to score CNVs 
+-PRS_group_comparison - Script to do the stats 
 
-logistic_modelling - Script to train and test predictability
+-CNV_scoring - Script to score CNVs 
 
-## Chapter 4 - 5 Next-Generation Sequencing Scripts 
+-Stats scripts - collection of scripts used to perform the stats and logistic regression classifier
 
-WGS_pipeline - script generator for HPC to generate whole genome sequencing pipeline from Fastqc to VCF (removed parts that identify specific information regarding HPC or account information )
+```
 
 
-Exome_pipeline - 
+**Chapter 4 - Exome-seq and RNA-seq scripts**
 
-RNA_seq_pipeline
+```
+-Exome_pipeline - 
 
- 
+-RNA_seq_pipeline
+```
+
+**Chapter 5 - WGS and LoF**
+ ```
+-Database_scripts - python scripts used to add pLi scores, phenotype group info and put read counts for each variant across the groups
+
+-vcf_to_Lof - The bash scripts/commands used to filter INDEL and SNP that are LoF and annotate them to dnNSFP
+
+```
