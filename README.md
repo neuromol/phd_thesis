@@ -8,7 +8,7 @@ email:
 `joshua.atkins  at uon.edu.au`
 
 
-####list of script 
+## list of script 
 
 **Chapter 3 - Arrays scripts** 
 
