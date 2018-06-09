@@ -84,30 +84,30 @@ cd /home/genomescratch1/old_stage8/new_ann/SNPs/filtered/LoF/
 java -jar /home/c3114203/apps/snpEff/SnpSift.jar dbnsfp -db /home/c3114203/apps/snpEff/dbNSFP2.9.txt.gz -f SIFT_pred,Polyphen2_HDIV_pred,Polyphen2_HVAR_pred,Met
 aLR_pred,ExAC_AC,ExAC_AF,clinvar_clnsig,clinvar_trait -v 100105.ann.vcf.snps.filtered.LoF > 100105.ann.vcf.snps.filtered.LoF.dbNSFP
 
-### LoF vcf to text format 
-java -jar /home/c3114203/apps/snpEff/SnpSift.jar extractFields -e "." 100105.ann.vcf.snps.filtered.LoF.dbNSFP CHROM POS ID REF ALT EFF[0].GENE EFF[0].IMPACT EFF
+**LoF vcf to text format** 
+```java -jar /home/c3114203/apps/snpEff/SnpSift.jar extractFields -e "." 100105.ann.vcf.snps.filtered.LoF.dbNSFP CHROM POS ID REF ALT EFF[0].GENE EFF[0].IMPACT EFF
 [0].EFFECT dbNSFP_ExAC_AC  dbNSFP_clinvar_trait dbNSFP_clinvar_clnsig dbNSFP_MetaLR_pred dbNSFP_Polyphen2_HDIV_pred > clean/100105.ann.vcf.snps.filtered.LoF.dbN
-SFP.clean
+SFP.clean```
 
-### once again this was merged together and went on to the Database_scripts 
+**once again this was merged together and went on to the Database_scripts**
 
 
-###Missense (not part of thesis - Just added for future reference) 
+##Missense (not part of thesis - Just added for future reference) 
 
-## Missense filtering
-#PBS -l select=1:ncpus=1:mem=16G,walltime=10:00:00
+**Missense filtering**
+```#PBS -l select=1:ncpus=1:mem=16G,walltime=10:00:00
 cd /home/genomescratch1/old_stage8/new_ann/SNPs/filtered/
  cat 100105.ann.vcf.snps.filtered | java -jar /home/c3114203/apps/snpEff/SnpSift.jar filter "ANN[*].EFFECT = 'missense_variant' " > Miss/100105.ann.vcf.snps.fil
-tered.clean 
+tered.clean' ```
 
 
-#PBS -l select=1:ncpus=1:mem=16G,walltime=10:00:00
+```#PBS -l select=1:ncpus=1:mem=16G,walltime=10:00:00
 cd /home/genomescratch1/old_stage8/new_ann/SNPs/filtered/Miss/
 java -jar /home/c3114203/apps/snpEff/SnpSift.jar dbnsfp -db /home/c3114203/apps/snpEff/dbNSFP2.9.txt.gz -f SIFT_pred,Polyphen2_HDIV_pred,Polyphen2_HVAR_pred,Met
-aLR_pred,ExAC_AC,ExAC_AF,clinvar_clnsig,clinvar_trait -v 100105.ann.vcf.snps.filtered.clean > 100105.ann.vcf.snps.filtered.clean.dbNSFP
+aLR_pred,ExAC_AC,ExAC_AF,clinvar_clnsig,clinvar_trait -v 100105.ann.vcf.snps.filtered.clean > 100105.ann.vcf.snps.filtered.clean.dbNSFP```
 
 
-Then this was merged, went on to Database_scripts
+**Then this was merged, went on to Database_scripts**
 
 
 
