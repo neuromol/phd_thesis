@@ -1,4 +1,4 @@
-#The creation of LoF Database
+# The creation of LoF Database
 
 
 **Each vcf file had the same size header, extract the header information as so;** 
@@ -17,7 +17,8 @@ tail -n +80 100105.ann.vcf | awk ' length($4) == 1 ||  length($5)== 1 '
 ```
 
 
-##example of bash 
+## LoF INDELS
+
 **all this was done via the bash, no python script was created to automate this (Time restrictions)**
 ```
 #PBS -l select=1:ncpus=1:mem=16G,walltime=01:00:00
@@ -106,7 +107,7 @@ SFP.clean
 **once again this was merged together and went on to the Database_scripts**
 
 
-#Missense (not part of thesis - Just added for future reference) 
+## Missense (not part of thesis - Just added for future reference) 
 
 **Missense filtering**
 
