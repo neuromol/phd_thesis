@@ -2,7 +2,7 @@
 
 *method adapted from https://www.nature.com/articles/nprot.2012.016*
 
-**After checking Fastqs with FastQC and removing over repersented reads and adaptors with Cutadapt**
+**After checking Fastqs with FastQC and removing over represented reads and adaptors with Cutadapt**
 
 
 ## Mapping and sorting
@@ -23,7 +23,7 @@ samtools index sampleID.sort.bam
 
 ## CuffLinks
 
-**Transcript assembling to generate gtf for each case with cufflinks, this step and the cuffmerge step can be skiped if you are only interested in known transcripts (just need to supply .gtf file for the reference that you aligned to)**
+**Transcript assembling to generate gtf for each case with cufflinks, this step and the cuffmerge step can be skipped if you are only interested in known transcripts (just need to supply .gtf file for the reference that you aligned to)**
 
 ```
 #!/bin/bash
