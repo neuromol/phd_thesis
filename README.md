@@ -27,13 +27,12 @@ email:
 
 ```
 
-
 **Chapter 3 - Exome-seq and RNA-seq scripts**
 
 ```
--Exome_pipeline - 
+-Exome_pipeline - Automated pipeline used for both the exome sequencing and whole genome sequencing 
 
--RNA_seq_pipeline
+-RNA_seq_pipeline - RNA sequencing pipeline 
 ```
 
 **Chapter 4 - WGS and LoF**
