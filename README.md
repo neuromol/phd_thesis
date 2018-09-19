@@ -10,7 +10,7 @@ email:
 
 ## list of script 
 
-**Chapter 3 - Arrays scripts** 
+**Chapter 2 - Arrays scripts** 
 
 ```
 -Neuromol_QC - Automated Array QC script 
@@ -28,7 +28,7 @@ email:
 ```
 
 
-**Chapter 4 - Exome-seq and RNA-seq scripts**
+**Chapter 3 - Exome-seq and RNA-seq scripts**
 
 ```
 -Exome_pipeline - 
@@ -36,7 +36,7 @@ email:
 -RNA_seq_pipeline
 ```
 
-**Chapter 5 - WGS and LoF**
+**Chapter 4 - WGS and LoF**
  ```
 -Database_scripts - python scripts used to add pLi scores, phenotype group info and put read counts for each variant across the groups
 
