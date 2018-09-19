@@ -1,14 +1,14 @@
 # RNA-seq Protocol
 
-* method adapted from https://www.nature.com/articles/nprot.2012.016
+* method adapted from https://www.nature.com/articles/nprot.2012.016*
 
-**After checking Fastqs with FastQC and removing over repersented reads and adaptors with Cutadapt 
+**After checking Fastqs with FastQC and removing over repersented reads and adaptors with Cutadapt **
 
 
 ## Mapping and sorting
 
 **The following commands were forwarded to an automated script to produce one mapped and sorted BAM file for each sample (which were in moved so they were in their own folder) : 
-note that the IDs have been changed to sampleID 
+note that the IDs have been changed to sampleID **
 
 ```
 #!/bin/bash
@@ -22,7 +22,7 @@ samtools index sampleID.sort.bam
 
 ## CuffLinks
 
-**Transcript assembling to generate gtf for each case with cufflinks, this step and the cuffmerge step can be skiped if you are only interested in known transcripts (just need to supply .gtf file for the reference that you aligned to) 
+**Transcript assembling to generate gtf for each case with cufflinks, this step and the cuffmerge step can be skiped if you are only interested in known transcripts (just need to supply .gtf file for the reference that you aligned to) **
 
 ```
 #!/bin/bash
@@ -33,7 +33,7 @@ cufflinks -p 4 -g ~/ref/genes.gtf sampleID.sort.bam
 
 ## CuffMerge
 
-** The location for each sample's .gtf file was detailed into a text file. 
+** The location for each sample's .gtf file was detailed into a text file. **
 
 ```
 #!/bin/bash
@@ -44,7 +44,7 @@ cuffmerge -p 8 -g ~/ref/genes.gtf list.txt
 
 ## CuffDiff
 
-** Differential Expression 
+** Differential Expression **
 
 ```
 #!/bin/bash
@@ -55,7 +55,7 @@ cuffdiff -p 8 -o results/ -L SZ,control /home/genomescratch1/RNAseq/merged_asm/m
 
 ## Individual analysis
 
-** Each case's gtf was merged with ever controls to create individual gtf files, with cuffdiff performed on each case compared to every control
+** Each case's gtf was merged with ever controls to create individual gtf files, with cuffdiff performed on each case compared to every control **
 
 
 
