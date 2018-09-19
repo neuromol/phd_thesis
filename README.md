@@ -1,4 +1,4 @@
-# Scripts generated while completing my PhD Thesis
+# Scripts generated while completing my PhD thesis
 
 **Josh Atkins -- University of Newcastle 2017** 
 
