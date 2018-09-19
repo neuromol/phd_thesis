@@ -1,4 +1,4 @@
-# Exome-seq/Whole genome pipeline
+# Exome-seq / Whole genome pipeline
 
 This is a python script where the ids for each samples it put in ids.txt and in the folders.py folders, email address, SCP server (in the case of this thesis it was neuromols local domain name) and batch number(very important to capture batch effects) 
 
