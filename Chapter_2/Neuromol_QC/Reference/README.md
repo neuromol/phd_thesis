@@ -4,7 +4,7 @@
 
 The plink files that were generated for the reference can be download from my server: 
 
-http://dickieho.xyz:44444/index.php/s/SA6FBfk05r2XS2G
+http://neuromol.com.au:44444/index.php/s/SA6FBfk05r2XS2G
 
 
 
